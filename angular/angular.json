@@ -106,7 +106,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular8-example:serve"
+            "devServerTarget": "angular:serve"
           },
           "configurations": {
             "production": {
