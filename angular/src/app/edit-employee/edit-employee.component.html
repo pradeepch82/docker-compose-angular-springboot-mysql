@@ -1,0 +1,54 @@
+<div class="container">
+  <h2>{{title}}</h2>
+
+
+<div class="row">
+
+<table class="table table-hover table-striped"  *ngIf="employee">
+<tbody>
+<tr>
+  <th>EMPLOYEE ID </th>
+  <td>  <input [(ngModel)]="employee.employeeId"/> </td>
+</tr>
+<tr>
+
+<th>FIRST NAME</th>
+ <td>  <input [(ngModel)]="employee.fname"/> </td>
+</tr>
+<tr>
+   <th>LAST NAME</th>
+   <td>  <input [(ngModel)]="employee.lname"/> </td>
+</tr>
+<tr>
+  
+  <th>SALARY</th>
+  <td>  <input [(ngModel)]="employee.salary"/> </td>
+</tr>
+<tr>
+  
+  <th>MOBILE</th>
+  <td>  <input [(ngModel)]="employee.mobile"/> </td>
+</tr>
+<tr>
+  
+  <th>PAN</th>
+  <td>  <input [(ngModel)]="employee.pan"/> </td>
+</tr>
+<tr>
+  
+  <th>EMAIL</th>
+  <td>  <input [(ngModel)]="employee.email"/> </td>
+</tr>
+<tr>
+  
+  <th>DOJ</th>
+  <td>  <input [(ngModel)]="employee.doj"/> </td>
+</tr>
+<tr>
+<td colspan="2"><input type="button" class="btn btn-success"  (click)="saveEmployee()" value="SAVE"> </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>

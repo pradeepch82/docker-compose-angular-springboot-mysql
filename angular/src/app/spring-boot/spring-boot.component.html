@@ -1,0 +1,53 @@
+<div class="container">
+  <marquee>
+  <h2>{{title}}</h2>
+</marquee>
+
+
+<div class="row">
+
+    <div align="right">
+        <a  [routerLink]="['/add']"> <input type="button" class="btn btn-primary" value="ADD EMPLOYEE" > </a> 
+    </div>
+      
+
+
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+  <th>EMPLOYEE ID </th>
+  <th>FIRST NAME</th>
+  <th>LAST NAME</th>
+  <th>SALARY</th>
+  <th>MOBILE</th>
+  <th>PAN</th>
+  <th>EMAIL</th>
+  <th>DOJ</th>
+  <th>EDIT</th>
+  <th>DELETE</th>
+</tr>
+</thead>
+<tbody>
+<tr  *ngFor="let e of employees">
+  <td>{{e.employeeId}}</td>
+  <td>{{e.fname}}</td>
+  <td>{{e.lname}}</td>
+  <td>{{e.salary}}</td>
+  <td>{{e.mobile}}</td>
+  <td>{{e.pan}}</td>
+  <td>{{e.email}}</td>
+  <td>{{e.doj}}</td>
+  <td> <a  [routerLink]="['/edit',e.employeeId]"> <input type="button" class="btn btn-success" value="EDIT" > </a> </td>
+  <td> <a  [routerLink]="['/delete',e.employeeId ]" > <input type="button" class="btn btn-danger"  value="DELETE"> </a> </td>
+    
+</tr>
+</tbody>
+</table>
+ 
+
+</div>
+
+
+
+
+</div>
