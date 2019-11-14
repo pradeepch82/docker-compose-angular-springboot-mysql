@@ -5,8 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { CaseStudyComponent } from './case-study/case-study.component';
 import { SpringBootComponent } from './spring-boot/spring-boot.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
