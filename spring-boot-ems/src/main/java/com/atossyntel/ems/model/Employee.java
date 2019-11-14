@@ -4,11 +4,12 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Random;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 
-@Document(collection="employees")
+
+@Entity(name="pc_employees")
 public class Employee implements Serializable{
 
 	
