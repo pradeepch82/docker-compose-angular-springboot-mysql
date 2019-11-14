@@ -110,11 +110,11 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular8-example:serve:production"
+              "devServerTarget": "angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular8-example"
+  "defaultProject": "angular"
 }
