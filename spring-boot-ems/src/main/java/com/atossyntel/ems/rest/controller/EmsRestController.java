@@ -1,13 +1,12 @@
 package com.atossyntel.ems.rest.controller;
 
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,12 +20,12 @@ import com.atossyntel.ems.model.Employee;
 import com.atossyntel.ems.service.EmployeeService;
 
 
+@CrossOrigin
 @RequestMapping("/employees")
 @RestController
 public class EmsRestController {
 
 
-	@Qualifier("employeeServiceRepositoryImpl")
 	@Autowired
 	private EmployeeService employeeService;
 
