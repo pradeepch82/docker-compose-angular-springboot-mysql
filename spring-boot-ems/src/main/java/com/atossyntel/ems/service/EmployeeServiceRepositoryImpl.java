@@ -19,13 +19,13 @@ public class EmployeeServiceRepositoryImpl implements EmployeeService {
 		// TODO Auto-generated method stub
 			
 		
-		return repository.findOne(employeId);
+		return repository.findById(employeId).get();
 	}
 
 	@Override
 	public boolean deleteEmployee(int employeeId) {
 
-		Employee employee = repository.findOne(employeeId);
+		Employee employee = repository.findById(employeeId).get();
 
 		if (employee != null) {
 			repository.delete(employee);
@@ -38,7 +38,7 @@ public class EmployeeServiceRepositoryImpl implements EmployeeService {
 	@Override
 	public boolean updateEmployee(Employee employee) {
 
-		Employee employee1 = repository.findOne(employee.getEmployeeId());
+		Employee employee1 = repository.findById(employee.getEmployeeId()).get();
 
 		if (employee1 != null) {
 			return repository.save(employee) == employee;
