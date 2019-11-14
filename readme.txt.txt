@@ -17,7 +17,9 @@ Step2 :
 Step 3:
 
      Type below command from direcotry containing docker-compose.yml
-     docker-compose.yml
+     
+     docker-compose up -d
+     
 
   
           
