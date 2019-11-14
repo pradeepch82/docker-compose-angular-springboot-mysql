@@ -1,4 +1,4 @@
-package com.pradeep.springboot.emsv4;
+/*package com.pradeep.springboot.emsv4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,3 +14,4 @@ public class Emsv4ApplicationTests {
 	}
 
 }
+*/
